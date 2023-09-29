@@ -1,9 +1,9 @@
-n = int(input('Введите ваше число-  '))
-summa = 0
-if n > 0:
-        for i in str(n):
-            if int(i) % 2 == 0:
-                summa += int(i)
-        print(f"получается = {summa}")
-else:
-        print("неправильное число")
+a = int(input("Введите число - "))
+b = 0
+
+while a > 0:
+    if a % 2 == 0:
+        b += a % 10
+    a //= 10
+
+print(b)
